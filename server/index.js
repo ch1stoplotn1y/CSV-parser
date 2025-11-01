@@ -16,7 +16,7 @@ app.use(express.json());
 let csvData = [];
 
 // Создание папки для хранения загружаемых файлов
-const uploadDir = 'server/uploads/';
+const uploadDir = 'uploads/';
 if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir, { recursive: true });
 }
